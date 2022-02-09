@@ -16,12 +16,25 @@ import './App.css';
 import { logout } from './services/fetch-utils';
 
 export default function App() {
+  
   // You'll need to track the user in state
-
+  const [currentUser, setCurrentUser] = useState(localStorage.getItem('supabase.auth.token'));
   // add a useEffect to get the user and inject the user object into state on load
+  useEffect(() => {
+    async function fetchUser() {
+      const user = await getUser();
+
+      if (user) setCurrentUser(user);
+    }
+    fetchUser();
+  }, []);
 
   async function handleLogout() {
     // call the logout function
+    <div className='logout'>
+      <button onClick={logout}>Logout</button>
+    </div>;
+    setCurrentUser('');
     // clear the user in state
   }
 
@@ -34,6 +47,9 @@ export default function App() {
         <main>
           <Switch>
             <Route exact path="/">
+              
+           
+              
               {/* if there is a user, redirect to the board games list. Otherwise, render the auth page. Note that the AuthPage will need a function called setUser that can set the user state in App.js */}
             </Route>
             <Route exact path="/board-games">
