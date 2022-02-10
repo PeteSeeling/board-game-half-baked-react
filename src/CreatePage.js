@@ -29,7 +29,7 @@ export default function CreatePage() {
     await createGame({ title, genre, designer, description, min_players, max_players });
 
     // use history.push to send the user to the list page
-    history.push('/List');
+    history.push('/board-games');
   }
 
   return (
