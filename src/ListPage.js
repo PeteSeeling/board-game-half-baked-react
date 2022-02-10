@@ -9,7 +9,7 @@ export default function ListPage({ games }) {
   return (
     <div className='list-games'>
       {/* map through the games in state and render Game components */}
-      {games.map((Game, i) => <Game key={`${Game.name}-${i}`} game={Game} />)}
+      {games.map((Game, i) => <Game key={`${Game.title}-${i}`} game={Game} />)}
     </div>
   );
 }
