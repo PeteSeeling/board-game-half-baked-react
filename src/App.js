@@ -43,7 +43,7 @@ export default function App() {
       <div className='App'>
         <header>
           {
-            // user && 
+            user && 
             <><NavLink to="/Game">Board Game List</NavLink><NavLink to="/CreatePage">Create Game</NavLink><button onClick={handleLogout}>Logout Button</button></>}
           {/* if there is a user in state, render out a link to the board games list, the create page, and add a button to let the user logout */}
         </header>
