@@ -31,9 +31,7 @@ export default function App() {
 
   async function handleLogout() {
     // call the logout function
-    <div className='logout'>
-      <button onClick={logout}>Logout</button>
-    </div>;
+    await logout('');
     setUser('');
     // clear the user in state
   }

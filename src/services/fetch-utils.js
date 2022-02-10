@@ -23,7 +23,7 @@ export async function signIn(email, password){
 export async function logout() {
   await client.auth.signOut();
 
-  return window.location.href = '../';
+  return window.location.href = './';
 }
 
 export async function createGame(game){
