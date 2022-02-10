@@ -42,7 +42,7 @@ export default function App() {
         <header>
           {
             user && 
-            <><NavLink to="/Game">Board Game List</NavLink><NavLink to="/CreatePage">Create Game</NavLink><button onClick={handleLogout}>Logout Button</button></>}
+            <><NavLink to="/List">Board Game List</NavLink><NavLink to="/Create">Create Game</NavLink><button onClick={handleLogout}>Logout Button</button></>}
           {/* if there is a user in state, render out a link to the board games list, the create page, and add a button to let the user logout */}
         </header>
         
@@ -51,7 +51,7 @@ export default function App() {
             <Route exact path="/">
               {
                 user 
-                  ? <Redirect to="/ListPage" />
+                  ? <Redirect to="/List" />
                   : <AuthPage setUser={setUser} />
               }
               
