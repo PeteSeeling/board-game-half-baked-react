@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useRouteMatch } from 'react-router-dom';
 import { getGameById } from './services/fetch-utils';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
