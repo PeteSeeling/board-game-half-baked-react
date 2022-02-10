@@ -89,4 +89,24 @@ select {
 .detail {
   width: 60%;
   margin: 0 auto;
+  border:solid 2px;
+  border-color:aqua;
+  justify-content: center;
+}
+.list-games{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+.game{
+  border:solid 2px;
+  border-color:aqua;
+  justify-content: center;
+}
+.create{
+  border:solid 2px;
+  border-color:aqua;
+  justify-content: center;
+  text-align: center;
 }
