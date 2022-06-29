@@ -3,7 +3,6 @@ import { createGame } from './services/fetch-utils';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 export default function CreatePage() {
-
   // you'll need the history hook from react-router-dom to do your redirecting in the handleSubmit
   const history = useHistory();
   const [title, setTitle] = useState('');
@@ -21,21 +20,16 @@ export default function CreatePage() {
     // maxPlayers;
 
   async function handleSubmit(e) {
-  
-
     e.preventDefault();
 
     // create a game
     await createGame({ title, genre, designer, description, min_players, max_players });
-
     // use history.push to send the user to the list page
     history.push('/board-games');
   }
 
   return (
-    
     <div className='create'>
-      
       {/* on submit, call your handleSubmit function */}
       <form onSubmit={handleSubmit}>
         <h2>Add board game</h2>

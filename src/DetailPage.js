@@ -18,8 +18,6 @@ export default function DetailPage() {
 
   // on mount, fetch and set in state the correct board game for this id (the id can be found in match.params using the correct react-router hook)
 
- 
-
   return (
     <div className='detail'>
       <h1>{game.title}</h1>

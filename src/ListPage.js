@@ -14,6 +14,7 @@ export default function ListPage() {
     }
     fetchGames();
   }, []); 
+  
   return (
     <div className='list-games'>
       {/* map through the games in state and render Game components */}
