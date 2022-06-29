@@ -53,7 +53,6 @@ a {
   align-items: center;
 }
 
-
 form { 
   text-align: right;
   margin: 100px;
@@ -82,10 +81,6 @@ select {
   align-items: center;
 }
 
-.game {
-
-}
-
 .detail {
   width: 60%;
   margin: 0 auto;
@@ -93,17 +88,19 @@ select {
   border-color:aqua;
   justify-content: center;
 }
+
 .list-games{
   display: flex;
   flex-direction: column;
   text-align: center;
-
 }
+
 .game{
   border:solid 2px;
   border-color:aqua;
   justify-content: center;
 }
+
 .create{
   border:solid 2px;
   border-color:aqua;
